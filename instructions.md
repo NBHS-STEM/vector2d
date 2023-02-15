@@ -7,7 +7,7 @@
 
     - Write an `__init__` method for `Vector2d` that has positional parameters for the `x` and `y` components that correspond to the *instance variables* `self.x` and `self.y`
 
-    - Write a `__repr__` method for the `Vector2d` class that returns a string such that `Vector2d(3, 4) == eval(repr(Vector2d(3, 4)))` is `True`
+    - Write a `__repr__` method for the `Vector2d` class. A good general rule for `repr` is that it should produce a string similar to the code used to create the object it describes. For example, `repr(Vector2d(3,4))` could produce `'Vector2d(x=3, y=4)'`.
 
     - Write a `__str__` method for the `Vector2d` class such that `str(Vector2d(3, 4))` would return `'3i + 4j'`. (**i** and **j** are what many physicists and engineers use to denote the x and y directions)
 
