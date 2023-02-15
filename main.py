@@ -11,5 +11,5 @@ class Vector2d:
 
     def __abs__(self):
         lenght = self.x**2 + self.y**2 
-      return(lenght)
+      return lenght ** (1/2)
 
