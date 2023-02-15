@@ -10,6 +10,5 @@ class Vector2d:
         return f"Vector 2D({self.x}i + {self.y}j"
 
     def __abs__(self):
-        lenght = self.x**2 + self.y**2 
-      return lenght ** (1/2)
-
+        lenght = (self.x**2 + self.y**2 ) **  (1/2) 
+        return lenght
