@@ -8,3 +8,6 @@ class Vector2d:
     
     def __str__(self):
         return f'{str(self.x)}i + {str(self.y)}j'
+    
+    def __abs__(self):
+        return ((self.x)**2 + (self.y)**2)/2
