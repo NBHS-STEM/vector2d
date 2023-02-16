@@ -11,3 +11,6 @@ class Vector2d:
     
     def __abs__(self):
         return ((self.x)**2 + (self.y)**2)**(1/2)
+    
+    def __neg__(self):
+        return f'Vector2d(-{self.x},-{self.y})'
