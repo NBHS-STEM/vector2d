@@ -8,3 +8,7 @@ class Vector2d:
         return f"{self.x}i + {self.y}j"
     def __abs__(self):
         return ((self.x**2) + (self.y**2))**(1/2)
+    def __neg__(self):
+        return Vector2d(self.x*-1,self.y*-1)
+    def __add__(self,other):
+        return Vector2d((self.x + other.x),(self.y + other.y))
