@@ -14,3 +14,20 @@ class Vector2d:
     def __abs__(self):
         c = (self.x**2)+(self.y**2)
         return math.sqrt(c)
+   
+    def __neg__(self):
+        return Vector2d(-self.x, -self.y)
+    
+    def __add__(self, other):
+        return Vector2d(self.x + other.x,self.y + other.y)
+    
+    def __eq__(self, other):
+        return bool((self.x, self.y) == (other.x, other.y))
+
+    def __sub__(self, other):
+        return Vector2d(self.x - other.x,self.y - other.y)
+    
+    def angle(self):
+        return math.degrees(math.atan2(self.x, self.y))
+        
+    
