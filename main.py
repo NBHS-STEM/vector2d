@@ -10,7 +10,7 @@ class Vector2d:
         return f"{self.x}i + {self.y}j"
 
     def __abs__(self):
-        return (self.x**2 + self.y**2)**.5
+        return str((int(self.x**2) + int(self.y**2))**.5)
     
     def __neg__(self):
         return f"Vector(-{self.x},-{self.y})"
