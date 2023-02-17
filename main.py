@@ -11,4 +11,4 @@ class Vector2d:
     def __neg__(self):
         return f"Vector2d(-{self.x},-{self.y})"
     def __add__(self, other):
-       pass
+        return Vector2d(self.x + other.x, self.y + other.y)
