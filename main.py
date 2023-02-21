@@ -10,7 +10,7 @@ class Vector2d:
         c = self.x ** 2 + self.y ** 2
         return c ** (1/2) 
     def __neg__(self): 
-        return f"Vector2d(-{self.x}, -{self.y})" 
+        return f"Vector2d({self.x * -1}, {self.y * -1})" 
     def __add__(self, other): 
         sum_x = self.x + other.x 
         sum_y = self.y + other.y 
