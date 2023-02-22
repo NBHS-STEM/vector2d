@@ -17,3 +17,8 @@ class Vector2d:
     
     def __add__(self,other):
         return f"Vector2d({int(self.x) + int(other.x)},{int(self.y) + int(other.y)})"
+
+    def __eq__(self,other):
+        return self.x == other.x and self.y == other.y
+    def __sub__(self,other):
+        return f"Vector2d({int(self.x) - int(other.x)},{int(self.y) - int(other.y)})"
