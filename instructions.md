@@ -17,8 +17,13 @@
 
 - 2/16/23
 
-    - The `__neg__` method determines the behavior of the *unary minus* (leading minus sign) on a `Vector2d` object.Write a `__neg__` method that takes `self` as its only argument and returns a `Vector2d` object with the signs for `x` and `y` negated. For example, `-Vector2d(3, 4)` would return `Vector2d(-3, -4)`.
+    - The `__neg__` method determines the behavior of the *unary minus* (leading minus sign) on a `Vector2d` object. Write a `__neg__` method that takes `self` as its only argument and returns a `Vector2d` object with the signs for `x` and `y` negated. For example, `-Vector2d(3, 4)` would return `Vector2d(-3, -4)`.
 
     - The `__add__` method determines how the '+' symbol works between two `Vector2d` objects. Write an `__add__` method that has two arguments, `self` and `other`, and produces a `Vector2d` object with the correct components. Remember that when we add vectors, we simply add their like components. For example: `Vector2d(3, 4) + Vector2d(1, -1)` should return `Vector2d(4, 3)`, since `3 + 1 = 4` and `4 + -1 = 3`.
 
     - Once you've finished the day's work, commit your changes and push them to **your** repository.
+
+- 2/22/23
+
+    - The `__eq__` method determines how comparisons using the `==` operator behave. Write a `__eq__` method that takes `self` and `other` as arguments and returns `True` if the `x` and `y` values of `self` and `other` are both equal. `__eq__` should return `False` otherwise.
+    - The `__sub__` method determines how the *binary minus*, `-` operator behaves. Write a `__sub__` method that takes `self` and `other` as arguments and returns the difference between the two vectors. For example: `Vector2d(3, 4) - Vector(1, -1)` should return `Vector2d(2, 5`.
