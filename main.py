@@ -15,6 +15,11 @@ class Vector2d:
 
     def __neg__(self):  
         return Vector2d(self.x*-1,self.y*-1)
-    ;
     def __add__(self,other):
         return f"Vector2d({self.x+other.x},{self.y+other.y})"
+    def __eq__(self,other):
+        if self.x == other.x and self.y == other.y:
+            return True 
+    def __sub__(self,other): 
+        return f"Vector2d({self.x - other.x},{self.y-other.y})"
+    
