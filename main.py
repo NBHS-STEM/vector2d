@@ -12,3 +12,12 @@ class Vector2d:
         return Vector2d(self.x*-1,self.y*-1)
     def __add__(self, other):
         return Vector2d(self.x + other.x, self.y + other.y)
+    def __eq__(self, other):
+        if (self.x == other.x) and (self.y == other.y):
+            return True
+        else:
+            return False
+    def __sub__(self, other):
+        return Vector2d(self.x - other.x, self.y - other.y)
+    def angle(self):
+        return (self.)
