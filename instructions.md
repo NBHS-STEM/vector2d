@@ -25,5 +25,10 @@
 
 - 2/22/23
 
-    - The `__eq__` method determines how comparisons using the `==` operator behave. Write a `__eq__` method that takes `self` and `other` as arguments and returns `True` if the `x` and `y` values of `self` and `other` are both equal. `__eq__` should return `False` otherwise.
+    - The `__eq__` method determines how comparisons using the `==` operator behave. Write an `__eq__` method that takes `self` and `other` as arguments and returns `True` if the `x` and `y` values of `self` and `other` are both equal. `__eq__` should return `False` otherwise.
+
     - The `__sub__` method determines how the *binary minus*, `-` operator behaves. Write a `__sub__` method that takes `self` and `other` as arguments and returns the difference between the two vectors. For example: `Vector2d(3, 4) - Vector(1, -1)` should return `Vector2d(2, 5)`.
+
+- 2/23/23
+
+    - Write a method called `angle` that has `self` as its only parameter and returns the arctangent **in degrees** of the vector's `y` and `x` components. **NOTE:** You'll want to consult the documentation for [`math.atan2(y, x)`](https://docs.python.org/3/library/math.html#math.atan2) and [`math.degrees(x)`](https://docs.python.org/3/library/math.html#math.degrees)
