@@ -22,4 +22,3 @@ class Vector2d:
             return True 
     def __sub__(self,other): 
         return f"Vector2d({self.x - other.x},{self.y-other.y})"
-    
