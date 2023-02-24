@@ -17,3 +17,15 @@ class Vector2d:
         apple = self.x + other.x
         banana = self.y + other.y
         return f"Vector2d({apple}, {banana})"
+    def __eq__(self, other):
+        if self.x == other.x:
+            if self.y == other.y:
+                return True
+        else:
+            return False
+    def __sub__(self, other):
+        x = self.x - other.x
+        y = self.y - other.y
+        return f"Vector2d({x}, {y})"
+    def angle(self):
+        return  math.degrees(math.atan2(self.y, self.x))
