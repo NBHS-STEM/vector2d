@@ -24,7 +24,7 @@ class Vector2d:
         dif_y = self.y - other.y 
         return f"Vector2d({dif_x}, {dif_y})"
     def angle(self): 
-        return math.degrees(math.atan2(self.x, self.y))
+        return math.degrees(math.atan2(self.y, self.x))
     
 test = Vector2d(3,4) 
-test1 = Vector2d(1,-1)
+test1 = Vector2d(1,1)
