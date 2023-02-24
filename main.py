@@ -21,6 +21,5 @@ class Vector2d:
         return Vector2d(self.x - other.x, self.y - other.y)
     def angle(self):
         import math
-        Arctangent = math.atan2(self.y, self.x)
-        return math.degrees(Arctangent)
+        return math.degrees(math.atan2(self.y,self.x))
 
