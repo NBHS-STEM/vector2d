@@ -14,5 +14,12 @@ class Vector2d:
     def __abs__(self):
         return (self.x**2 + self.y**2) ** .5
 
+    def __neg__(self):
+        return Vector2d(-self.x, -self.y)
+
+    def __add__(self, other):
+        return Vector2d(self.x + other.x, self.y + other.y)
     
+    
+
     
