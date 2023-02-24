@@ -12,14 +12,16 @@ class Vector2d:
     
     def _abs_(self):
         hypotenuse = (self.x**2+self.y**2)**.5
-        
-    
+        return hypotenuse
+   def _neg_(self)
+       return Vector2d(self.x*-1, self.y*-1)
     def __eq__(self):
         if Vector2d((self.x, self.y)==(other.x,other.y))
+              return True
     
     def_sub_(self):
         if vector2d((self.x-other.y), (self.x-other.y))
 
     def_angle_(self):
-        return math.atan2((y/x)-pi==pi)==
-the the angie the ng e f   
+        return math.degress(math.atan2(self.y,self.x))
+          
