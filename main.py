@@ -1,3 +1,4 @@
+import math
 
 class Vector2d:
 
@@ -26,6 +27,7 @@ class Vector2d:
     def __sub__(self, other):
         return Vector2d(self.x - other.x, self.y - other.y)
 
-    
+    def angle(self):
+        return math.degrees(math.atan2(self.y, self.x))
 
     
