@@ -11,8 +11,8 @@ class Vector2d:
         return ((self.x**2)+(self.y**2)) **(1/2) 
     def __neg__(self):
         return Vector2d(self.x*-1, self.y*-1)
-    def __add__(self,rest_of_x): 
-        return Vector2d((self.x+rest_of_x.x), (self.y+rest_of_x.y))
+    def __add__(self,other): 
+        return Vector2d((self.x+other.x), (self.y+other.x))
     def __eq__(self,other):
         return Vector2d((self.x==other.x), (self.y==other.y))
     def __sub__(self,other):
