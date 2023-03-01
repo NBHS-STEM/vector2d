@@ -12,7 +12,7 @@ class Vector2d:
         return f"{self.x}i + {self.y}j"
 
     def __abs__(self):
-        return (self.x ** 2 + self.y ** 2) ** .5
+        return round((self.x ** 2 + self.y ** 2) ** .5, 1)
     
     def __neg__(self):
         return Vector2d(-self.x, -self.y)
@@ -27,4 +27,6 @@ class Vector2d:
         return Vector2d(self.x - other.x, self.y - other.y)
 
     def angle(self):
-        return math.degrees(math.atan2(self.y, self.x))
+        return round(math.degrees(math.atan2(self.y, self.x)), 1) 
+    
+test = Vector2d(3, 4)
